@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> FUUAST </title>
+                      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+<style>
+*{
+	padding:0px;
+	margin:0px;
+	}
+body{
+     background:black;	
+}
+#header{
+	width:100%;
+	height:160px;
+	background:green;
+}
+#header img{
+	width:150px;
+	height:150px;
+	float:left;
+}
+#header h1{
+	float:right;
+	font-size:50px;
+	margin:30px 10% 0px 0px;
+	text-transform:uppercase;
+	color:#fff;
+	
+}
+
+	
+
+#main_content{
+		width:100%;
+	    height:1200px;
+	    background:url(uni.png) no-repeat;
+	    float:right;
+}
+#main_content img {
+		width:100%;
+	    height:800px;
+	    
+}
+#main_content nav{
+	   background: #148A40;
+	   height: 80px;
+	   width:100%;
+	
+} 		
+#main_content nav label.logo{
+	    color: white;
+		font-size: 40px;
+		font-family: Lucida Sans Unicode; 
+		line-height: 80px;
+		font-weight: bold;
+		padding: 10 100px;
+		text-transform: uppercase;
+	
+		}
+		
+#main_content nav ul{
+		float:right;
+		margin-right: 20px;
+		
+}
+		
+#main_content nav ul li{
+		display: inline-block;
+		font-family: Lucida Sans Unicode;
+		margin: 0 5px;
+		line-height: 80px;
+		
+		
+		
+		
+}
+#main_content nav ul li a{
+		color: white;
+		font-size: 17px;
+		text-transform: uppercase;	
+		padding: 7px 13px;
+		border-radius: 3px;
+		
+		
+}
+        	
+#main_content nav ul li a.active , a:hover {
+		background: #6A8A14;
+		transition: .5s;
+		
+
+
+}
+
+#main_content nav ul li a nav ul li a {
+
+		display: none;
+	
+	}
+
+#main_content nav ul li nav ul li a:hover{
+
+		display: block;
+		position: absolute;
+		  background: #148A40;
+	   height: 80px;
+	   width:100%;
+		
+
+}
+
+
+#main_content .featured{
+	width:100%;
+	height:385px;
+}
+#main_content .featured h2{
+	background:green;
+	color:#000;
+	padding:10px;
+	margin:10px 0px;
+	text-transform:uppercase;
+	
+}
+#main_content .featured .container{
+	width:100%;
+	margin:0 auto;
+	white-space:nowrap;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+#main_content .featured .container .f_i{
+	width:19.5%;
+	height:260px;
+	background:#000;
+	margin-right:10px;
+	position:relative;
+	display:inline-block;
+	border:1px solid #fff;
+	
+}
+
+#main_content .featured .container .f_i img{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:300px;
+	text-align:center;
+	padding:10px px;
+}
+
+
+
+.container-2{
+	width:100%;
+	height:600px;
+	margin:0;
+	padding:0;
+	font-family: montserrat;
+	background: green;
+	overflow: hidden;
+
+}
+
+.center{
+    position:absolute;
+	transform: translate (-50%),-50%);
+	width:30%;
+	background:white;
+	border-radius:10px;
+	margin: 120px;
+	padding: 10px;
+	
+}
+.center h1{
+   text-align: center;
+   padding: 0 0 20px 0;
+   border-bottom: 1px solid silver;
+   color: #6A8A14;
+	
+}
+
+
+.center form{
+   padding: 0 40px;
+   box-sizing: border-box;
+   
+
+}
+form .text_field{
+   
+    border-bottom: 1px solid #adadad;
+	margin: 30px 0;
+   }
+.text_field input{
+	width: 100%;
+	padding: 0 5px;
+	height:  40px;
+	font-size: 16px;
+	border: none;
+	background:none;
+	outline:none;
+
+
+}
+
+.text_field label{
+	color: #adadad;
+
+
+}
+
+.text_field span::before{
+    content: '';
+	background: #6A8A14;
+
+
+}
+.pass{
+    margin:-5px 0 20px 5px;
+	color: #adadad;
+	cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+      width:100%;
+	  height:50px;
+	  border: 1px solid;
+	  background: #6A8A14;
+	  border-radius: 25px;
+	  cursor:pointer;
+     
+}
+
+.container-3{
+	width:100%;
+	height:100px;
+	margin:0;
+	padding:0;
+	font-family: montserrat;
+	background: green;
+	overflow: hidden;
+
+}
+
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #6A8A14;
+  color: black !important;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #6A8A14;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<div id="header">
+	 <img src="images/fuuas.png" alt="official logo" />
+	 <h1>federal urdu university</h1>
+	
+	 </div>
+	
+	 <div id="main_content">
+	 
+	 <nav> 
+	     <label class="logo"> FUUAST</label> 
+		 
+		 <ul>
+		 
+		 
+		     <li><a class= "active" href="">home</a></li>	 
+			 <li><a href="">fee section</a>
+			 
+			 
+				<nav>
+				     <ul>
+					    <li><a href="">MISSION</a></li>
+					    <li><a href="">VISION</a></li>
+						<li><a href="">TEAM</a></li>
+					 </ul>
+				</nav>
+			 
+			 </li>
+			 
+			 
+			 <li><a href="">services</a>
+			    <nav>
+				     <ul>
+					    <li><a href="">MISSION</a></li>
+					    <li><a href="">VISION</a></li>
+						<li><a href="">TEAM</a></li>
+					 </ul>
+				</nav>
+			 
+			 
+			 </li>
+			 <li><a href="">contact</a></li>
+			 <li><a href="">about</a></li>
+		 </ul>
+	 </nav>
+	 <img src="images/uni.png" alt="official logo" />
+	 
+
+	 <div class="featured">
+   <h2>GALLERY:</h2>
+      <div class="container">
+	    <div class="f_i"> 
+		  <img src="images/ab.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="images/cd.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="images/ef.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="images/gh.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="images/uni.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="images/ab.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="images/cd.png" alt="product img"/>
+		</div>   
+		
+		 <div class="f_i"> 
+		  <img src="images/ef.png" alt="product img"/>
+		</div>  
+     </div>
+
+<div class="container-2">
+        <div class="center">
+		  <h1>Login</h1>
+		  <form method="post">
+		    <div class="text_field">  
+			   
+			   <input type="text" required> 
+                   
+				   <span></span>
+                  			
+				<label> Username</label>
+			
+			
+			
+			</div>
+			 <div class="text_field">  
+			   
+			   <input type="Password" required>  
+			   
+			   <span></span>
+			   
+				<label> Password</label>
+
+			</div>
+			<div class="pass">Forgot Password</div>
+			<input type="submit" value="Login">
+			<div class="signup_link"> 
+			    Not a Member? <a href="#">SignUp</a>
+			
+			</div>
+     	  </form>
+		
+		</div>		
+    </div>     
+ 	 
+	 <div class="container-3">
+				 <div class="pagination">
+					<a href="#">&laquo;</a>
+					<a href="#">1</a>
+					<a class="active" href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">&raquo;</a>
+				  </div>
+    </div>
+
+</body>
+</html>
+
+
